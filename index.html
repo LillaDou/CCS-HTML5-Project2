@@ -1,124 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Layout</title>
-    <link rel="stylesheet" href="css/styles.css"/>
-    <style type="text/css">
-        a:link
-        {
-        text-decoration:none;
-        }
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" 
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <title>My Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <style>
+            body {
+                font-family: "Roboto";
+            }
         </style>
-</head>
-<body>
-    <div class="page">
-        <header>
-            <h1><a class="title" name="title">Student Name</a></h1>
-            <nav>
-                <ul class="menu">
-                    <li class="navegation"> <a href="#top">HOME</a></li>
-                    <li class="navegation"> <a href="index.html#secondary-titles-1">PORTFOLIO</a></li>
-                    <li class="navegation"> <a href="index.html#secondary-titles-2">CONTACT</a></li>
-                </ul>
-            </nav>
-            <article class="introduction">
-                    <img src="images/responsive-layout-profile.png" class="responsive-layout-profile">
-                    <p class="text-intro">
-                        Hi! I'm a front-end developer who loves responsive design and css!
-                    </p>
-                </article>  
-        </header>
-        <main>
-            
-            <section class="portfolio">
-                <h1><a class="secondary-titles-1" name="secondary-titles-1">PORTFOLIO</a></h1>
-            <div class="portfolio-sections">
-                <article class="section">
-                        <img src="images/portfolio-1.png" class="portfolio-images">
-                        <h2>Marketing Page</h2>
-                        <p class="text-article">
-                            This proyect shows the front page of a marketing website meant for a specific
-                            business I'm interested in.
-                        </p>
-                                               
-                    </article>
-                <article class="section">
-                        <img src="images/portfolio-2.png" class="portfolio-images">
-                        <h2>Search Page</h2>
-                        <p class="text-article">
-                            This proyect searchs through a specific database to find information that the
-                            user is trying to look up.
-                        </p>
-                        
-                    </article>
-                <article class="section">
-                        <img src="images/portfolio-3.png" class="portfolio-images">
-                        <h2>Travel App</h2>
-                        <p class="text-article">
-                            This proyect compares travel times based on different transportation methods
-                            and tells you the best ones.
-                        </p>
-                                               
-                    </article>
-                <article class="section">
-                        <img src="images/portfolio-6.png" class="portfolio-images">
-                        <h2>Map of Favorite Spots</h2>
-                        <p class="text-article">
-                            This proyect uses mapping apis to plot points for my favorite spots in the 
-                            city for a do-it-yourself walking tour.
-                        </p>
-                                                
-                    </article>
-                <article class="section">
-                        <img src="images/portfolio-5.png" class="portfolio-images">
-                        <h2>Photo Gallery</h2>
-                        <p class="text-article">
-                            This proyect shows pictures from a recent trip to the viewer and allows them
-                            to easily navigate through photos.
-                        </p>
-                                               
-                    </article>
-                <article class="section">
-                        <img src="images/portfolio-4.png" class="portfolio-images">
-                        <h2>Calculator</h2>
-                        <p class="text-article-last">
-                            Someone can enter in the numbers they want, and press the big blue button
-                            and get the result.
-                        </p>
-                    </article>
-                </div>
-                </section>
-        </main>
-        <footer>
-            <section class="contact">
-                    <h1><a class="secondary-titles-2" name="secondary-titles-2">CONTACT</a></h1>
-                    <p class="text-contact">
-                        If you're interested in chatting or want more information about what I've
-                        been working on, I'd love to hear from you!
-                    </p>
-                    <p class="phone-number">
-                        Phone &nbsp; <b>+1(111)555-1234</b>
-                    </p>
-                    <address> 
-                        Email &nbsp; <a><b>email@yoursite.com</b></a>
-                    </address>
-                    <hr>
-                    <nav class="nav-footer">
-                        <a class="student-name" href="index.html#title">Student name</a>
-                        <a class="back-to-top" href="#top">BACK TO TOP</a>
-                        <ul class="menu-footer">
-                                <li class="navegation-footer"> <a href="#top">HOME</a></li>
-                                <li class="navegation-footer"> <a href="index.html#secondary-titles-1">PORTFOLIO</a></li>
-                                <li class="navegation-footer"> <a href="index.html#secondary-titles-2">CONTACT</a></li>
-                            </ul>
-                    </nav>
-                    
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                <h1 id="top-page">Student Name</h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#top-page">HOME</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
 
+                <img class="image profile" src="images/responsive-layout-profile.png" alt="Profile picture"/>
+                <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree
+                    in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+            </header>
+
+            <section class="main">
+                <h2 id="portfolio">PORTFOLIO</h2>
+
+                <article class="marketing">
+                    <img class="image" src="images/portfolio-1.png" alt="Marketing page layout"/>
+                    <h3>Marketing Page</h3>
+                    <p>This project shows the front page of a marketing website meant for a specific business I'm 
+                        interested in. </p>
+                </article>
+
+                <article class="search-page">
+                    <img class="image" src="images/portfolio-2.png" alt="Search page layout"/>
+                    <h3>Search Page</h3>
+                    <p>This project searches through a specific database to find information that the user is trying
+                        to look up.</p>
+                </article>
+
+                <article class="travel-app">
+                    <img class="image" src="images/portfolio-3.png" alt="Travel app layout"/>
+                    <h3>Travel App</h3>
+                    <p>This project compares travel times based on different transportation methods and tells you 
+                        the best one. </p>
+                </article>
+
+                <article class="map">
+                    <img class="image" src="images/portfolio-6.png" alt="Map layout"/>
+                    <h3>Map of Favourite Spots</h3>
+                    <p>This project uses mapping apis to plot points for my favourite spots in the city for a
+                        do-it-yourself walking tour.</p>
+                </article>
+
+                <article class="gallery">
+                    <img class="image" src="images/portfolio-5.png" alt="Photo gallery layout"/>
+                    <h3>Photo Gallery</h3>
+                    <p>This project shows pictures from a recent trip to the viewer and allows them to easily 
+                        navigate through photos.</p>
+                </article>
+
+                <article class="calculator">
+                    <img class="image" src="images/portfolio-4.png" alt="Calculator layout"/>
+                    <h3>Calculator</h3>
+                    <p>Someone can enter in the numbers they want, and press the big blue button and get the result. </p>
+                </article>
+            </section>
+
+            <footer>
+                <section class="contact-page">
+                    <h2 id="contact">CONTACT</h2>
+                    <p>If you're interested in chatting or want more information about what I've been working on, 
+                        I'd love to hear from you!</p>
+                    <address>
+                        <p>Phone <a href="tel:+1(111)555-1234"><strong>+1(111)555-1234</strong></a></p>
+                        <p>Email <a href="mailto:email@yoursite.com"><strong>email@yoursite.com</</a></p>
+                    </address>
+                     
                 </section>
-        </footer>
-    </div>
-</body>
+
+                <nav class="footer-menu">
+                    <ul>
+                        <li>Student name</li>
+                        <li><a href="#top-page">Back to top</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </body>
 </html>
