@@ -128,8 +128,8 @@ address > a {
 address {
     all: initial;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     font-family: "Roboto", sans-serif;
     font-size: inherit;
