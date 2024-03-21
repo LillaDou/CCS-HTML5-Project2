@@ -36,7 +36,7 @@
             <div class="portfolio-section">
                 <section class="main">
                     <h2 id="portfolio">PORTFOLIO</h2>
-                    
+
                     <div class="portfolio-container">
                         <article class="marketing portfolio-grid-item">
                             <img class="image" src="images/portfolio-1.png" alt="Marketing page layout"/>
@@ -86,18 +86,27 @@
                 <footer>
                     <section class="contact-page">
                         <h2 id="contact">CONTACT</h2>
-                        <p>If you're interested in chatting or want more information about what I've been working on, 
-                            I'd love to hear from you!</p>
-                        <address>
-                            <p>Phone <a class="address-item" href="tel:+1(111)555-1234"><strong>+1(111)555-1234</strong></a></p>
-                            <p>Email <a class="address-item" href="mailto:email@yoursite.com"><strong>email@yoursite.com</strong></a></p>
-                        </address>
+                        <div class="contact-page-elements">
+                            <p>If you're interested in chatting or want more information about what I've been working on, 
+                                I'd love to hear from you!</p>
+                            <address>
+                                <p>Phone <a class="address-item" href="tel:+1(111)555-1234"><strong>+1(111)555-1234</strong></a></p>
+                                <p>Email <a class="address-item" href="mailto:email@yoursite.com"><strong>email@yoursite.com</strong></a></p>
+                            </address>
+                        </div>
                     </section>
 
                     <nav class="footer-menu">
                         <ul class="footer-menu-elements">
                             <li class="student-name-footer">Student name</li>
-                            <li><a class="back-to-top" href="#top-page">BACK TO TOP</a></li>
+                            <div class="mobile-only-footer">
+                                <li><a class="back-to-top" href="#top-page">BACK TO TOP</a></li>
+                            </div>
+                            <div class="other-devices-footer">
+                                <li><a class="footer-item" href="#top-page">HOME</a></li>
+                                <li><a class="footer-item" href="#portfolio">PORTFOLIO</a></li>
+                                <li><a class="footer-item" href="#contact">CONTACT</a></li>
+                            </div>
                         </ul>
                     </nav>
                 </footer>
