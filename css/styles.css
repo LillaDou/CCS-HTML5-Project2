@@ -334,7 +334,66 @@ address {
     }
 }
 
-/*Desktop Styles
+/* Desktop Styles */
 @media only screen and (min-width: 961px) {
+    body {
+        display: flex;
+        justify-content: center;
 
-}*/
+        background-color: #FAFAFA;
+    }
+    .page {
+        max-width: 1024px;
+        background-color: #FAFAFA;
+        border: 1px solid red;
+    }
+    /*Header*/
+    .header-section {
+        border: 1px aqua solid;
+        margin-right: 20px;
+    }
+    header {
+        border: 1px orange solid;
+        margin: 0;
+    }
+    .navigation-menu-container {
+        border: 1px blue solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        margin-bottom: 55px;
+    }
+    #top-page {
+        margin-bottom: -12px;
+    }
+    .menu{
+        border: 1px aqua solid;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    .menu li {
+        background-color: #FAFAFA;
+        padding: 0 20px;
+        margin-bottom: 0px;
+
+        list-style-type: none;
+    }
+    .profile-section {
+        border: 1px green solid;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:space-between;
+
+    }
+    .profile-picture {
+        padding: 0px
+    }
+    .profile-text {
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.5em;
+    }
+
+}
