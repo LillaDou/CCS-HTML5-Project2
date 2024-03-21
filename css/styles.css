@@ -194,6 +194,9 @@ address {
 /*Tablet Styles*/
 @media only screen and (min-width: 601px) and (max-width: 960px) {
 /*Header*/
+    .header-section {
+        margin-bottom: 0px;
+    }
     #top-page {
         margin-top: 45px;
         margin-bottom: 15px;
@@ -232,6 +235,51 @@ address {
         line-height: 1.5em;
     }
 
+    /*Main*/
+    .portfolio-section {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        }
+    #portfolio {
+        margin-bottom: 44px;
+    }
+    .portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .portfolio-grid-item {
+        width: 49%;
+        height: 49%;
+        margin-bottom: 57px;
+    }
+    .image {
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+    .portfolio-grid-item > p {
+        text-align: center;
+        margin-right: 34px;
+        margin-left: 34px;
+
+        margin-bottom: 0px;
+    }
+    .calculator > p {
+        margin-bottom: 0px;
+    }
+
+    /*Footer*/
+    
 }
 
 /*Desktop Styles
